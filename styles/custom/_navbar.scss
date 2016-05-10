@@ -1,0 +1,41 @@
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+/*@media (min-width: 0) {
+  
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  
+}*/
+
+.navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+
+.navbar {
+    left: auto;
+    background: none;
+    border: none;
+  }
+
+#page-overlay{
+    visibility: visible;
+    z-index:200;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,.2);
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
