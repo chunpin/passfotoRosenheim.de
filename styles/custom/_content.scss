@@ -1,0 +1,55 @@
+/* START OF 3 packages tabs*/
+.nav-tabs > li{
+	width:calc(100% / 3);
+}
+
+
+@media screen and (min-width:768px) {
+	.three-package-tabs{
+		position:relative;
+		top:-50px;
+	}
+}
+
+/* END OF 3 packages tabs*/
+
+
+
+
+.hero{
+	background: $orange-light;
+background: -moz-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, $orange-light), color-stop(100%, $orange));
+background: -webkit-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: -o-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: -ms-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: linear-gradient(to bottom, $orange-light 0%, $orange 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff9500', GradientType=0 );
+   .header{
+   	color:$white;
+   }
+}
+
+
+
+.how-it-works,.testmonial{
+	color:$blue-gray;
+}
+
+
+
+.testmonial{
+	background: $orange-light;
+background: -moz-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, $orange-light), color-stop(100%, $orange));
+background: -webkit-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: -o-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: -ms-linear-gradient(top, $orange-light 0%, $orange 100%);
+background: linear-gradient(to bottom, $orange-light 0%, $orange 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff9500', GradientType=0 );
+}
+
+
+
+
+
