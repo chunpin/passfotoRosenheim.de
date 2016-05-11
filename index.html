@@ -32,7 +32,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
-     
+
 
   </head>
   <body>
@@ -76,14 +76,18 @@
     <section class="hero">
        <div class="container">
         <div class="row">
-          <img src="images/logo.svg" alt="PassfotoRosenheim.de">
+          <img class="logo" src="images/logo.svg" alt="PassfotoRosenheim.de">
         </div><!-- row -->
         <div class="row">
-          <img class="col-xs-12 col-sm-5" src="/images/hand_hoding_passfoto.png" alt="" >
+          <div class="col-xs-12 col-sm-5 hand-wrapper">
+            <img class="img-responsive" src="/images/hand_hoding_passfoto.png" alt="" >
+          </div>
           <div class="col-xs-12 col-sm-7 text-center">
             <h1 class="header">bekommen Sie Ihre fotos 
             innerhalb 7 minuten</h1>
-            <button type="button" class="btn btn-default">Default</button>
+            <a class="btn btn-default" href="tel:+49-08031-8878777">Uns anrufen<br>
+                08031 8878777 &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>
+            </a>
           </div>
           
         </div>
@@ -92,29 +96,29 @@
 
     
 
-    <section>
+    <section class="three-packages-section text-center">
       <div class="container three-package-tabs">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation"class="active">
             <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-            <img src="/images/bewerbungsfoto-tab-01.jpg" alt="Biometrische Passbilder">
-            <h2>Biometrische Passbilder</h2>
+            <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="Biometrische Passbilder">
+            <h5>Biometrische Passbilder</h5>
             <p>Reisepass, Personalausweis, Führerschein</p>
             </a>
           </li>
           <li role="presentation">
             <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-            <img src="/images/bewerbungsfoto-tab-01.jpg" alt="Biometrische Passbilder">
-            <h2>Visum-Fotos</h2>
+            <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="Visum-Foto">
+            <h5>Visum-Foto</h5>
             <p>Visum, US-Bürger-Reisepass</p>
             </a>
           </li>
           <li role="presentation">
             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-            <img src="/images/bewerbungsfoto-tab-01.jpg" alt="Biometrische Passbilder">
-            <h2>Bewerbungsfotos</h2>
-            <p>Bewerbung</p>
+            <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="Quickshot">
+            <h5>Quickshot</h5>
+            <p>Quickshot</p>
             </a>
           </li>
         </ul>
@@ -123,15 +127,31 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane fade in active" id="home">
               <h2>Biometrische Passbilder</h2>
-              <p>Reisepass, Personalausweis, Führerschein</p>
+              <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
+              <ul>
+                <li>Super Schnell</li>
+                <li>100% Akzeptanz</li>
+                <li>6 Passbilde</li>
+                <li>Sofort mitnehmen</li>
+              </ul>
           </div>
           <div role="tabpanel" class="tab-pane fade in" id="profile">
-              <h2>Visum-Fotos</h2>
-              <p>Visum, US-Bürger-Reisepass</p>
+              <h2>Visum-Foto</h2>
+              <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
+              <ul>
+                <li>Super Schnell</li>
+                <li>100% Akzeptanz</li>
+                <li>Sofort mitnehmen</li>
+              </ul>
           </div>
           <div role="tabpanel" class="tab-pane fade in" id="messages">
-              <h2>Bewerbungsfotos</h2>
-              <p>Bewerbung</p>
+              <h2>Biometrische Passbilder</h2>
+              <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
+              <ul>
+                <li>6 Passbilder</li>
+                <li>2 x 13 x 18 schöne Portrait</li>
+                <li>Sofort mitnehmen</li>
+              </ul>
           </div>
         </div>
       </div>
