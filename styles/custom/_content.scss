@@ -33,6 +33,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    }
    .header{
    	color:$white;
+    font-size:26px;
    }
 
    .btn-default{
@@ -42,17 +43,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    	border-radius: none;
    	margin:10px 10px 20px 10px;
    }
+
+   /*css shake*/
+   .shake-slow:hover, .shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant{
+    animation: shake-slow 20s ease-in-out infinite;
+   }
    .logo{
    	margin-top:10px;
    	height:50px;
    }
    .hand-wrapper{
-   	height:150px;
+   	min-height:150px;
+    padding:0;
    	.img-responsive{
-   		max-width:50%;
+   		max-width:66%;
    		margin:0 auto;
    	}
    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    .hero{
+          .hand-wrapper{
+            .img-responsive{
+              max-width:100%;
+            }
+          }
+            
+    }  
 }
 
 /*END OF hero section*/
@@ -67,28 +87,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
 /*START OF  three-packages-section*/
 .three-packages-section{
   .container{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
   	padding-left:0;
   	padding-right:0;
     .nav-tabs{
-    	li {
-    		&.active{
-    			border-top:5px solid $orange-light;
-    		}
-    		p{
-    		font-size:12px;
-    	    } 
-    	    a{
-    	    	min-height:200px;
-            padding-left:5px;
-            padding-right:5px;
-    	    }
-        }
+      background-color:$tab-color;
+      	li {
+      		&.active{
+      			border-top:5px solid $orange-light;
+      		}
+      		p{
+      		font-size:12px;
+      	    } 
+      	    a{
+      	    	min-height:200px;
+              padding-left:5px;
+              padding-right:5px;
+                  .tab-image{
+                    width:80px;
+                  }
+      	    }
+          }
     }
 
   	.tab-content{
   		padding-left:15px;
   		padding-right:15px;
+
       .tab-pane{
+          .image-wrapper{
+            padding-top:30px;
+            padding-bottom:30px;
+            .detail-image{
+              transform:rotate(-13deg);
+              padding:10px;
+              box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+            }
+          }
           li {
               display: block;
           }
@@ -103,6 +138,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
               margin-left: -17px;
               color: $green;
           }
+
       }
   	}
   }
@@ -114,6 +150,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
 .how-it-works,.testmonial{
 	color:$blue-gray;
 }
+
+
+/* START OF how it works section*/
+.how-it-works{
+  .card{
+    margin-bottom:30px;
+  }
+}
+/* END OF how it works section*/
 
 
 /*START OF testmonial*/
