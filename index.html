@@ -19,7 +19,7 @@
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" contzent="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
     <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
@@ -127,31 +127,37 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane fade in active" id="home">
               <h2>Biometrische Passbilder</h2>
-              <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
-              <ul>
-                <li>Super Schnell</li>
-                <li>100% Akzeptanz</li>
-                <li>6 Passbilde</li>
-                <li>Sofort mitnehmen</li>
-              </ul>
+              <div class="tab-pane-content text-left">
+                <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
+                <ul>
+                  <li>Super Schnell</li>
+                  <li>100% Akzeptanz</li>
+                  <li>6 Passbilde</li>
+                  <li>Sofort mitnehmen</li>
+                </ul>
+              </div>
           </div>
           <div role="tabpanel" class="tab-pane fade in" id="profile">
               <h2>Visum-Foto</h2>
-              <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
-              <ul>
-                <li>Super Schnell</li>
-                <li>100% Akzeptanz</li>
-                <li>Sofort mitnehmen</li>
-              </ul>
+              <div class="tab-pane-content text-left">
+                <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
+                <ul>
+                  <li>Super Schnell</li>
+                  <li>100% Akzeptanz</li>
+                  <li>Sofort mitnehmen</li>
+                </ul>
+              </div>
           </div>
           <div role="tabpanel" class="tab-pane fade in" id="messages">
               <h2>Biometrische Passbilder</h2>
-              <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
-              <ul>
-                <li>6 Passbilder</li>
-                <li>2 x 13 x 18 schöne Portrait</li>
-                <li>Sofort mitnehmen</li>
-              </ul>
+             <div class="tab-pane-content text-left">
+                <img src="/images/passfoto-rosenheim-biometrische-passbilder.jpg" alt="">
+               <ul>
+                 <li>6 Passbilder</li>
+                 <li>2 x 13 x 18 schöne Portrait</li>
+                 <li>Sofort mitnehmen</li>
+               </ul>
+             </div>
           </div>
         </div>
       </div>
@@ -190,30 +196,81 @@
           <h2>Warum unsere Kunden uns lieben</h2>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card">
-              <h4>little header</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione.</p>
-              <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=83%C3%97100&w=30&h=30" alt="">
-              <p>Name</p>
+
+          <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+               <div class="fb-page" data-href="https://www.facebook.com/batchfield.de" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/batchfield.de"><a href="https://www.facebook.com/batchfield.de">batchfield.de | photography</a></blockquote></div></div><!-- fb-page -->
+            </div><!-- card-wrapper -->
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
+          <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+              <div class="card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi nisi dolore nobis distinctio ea illo, animi qui harum quae nesciunt assumenda est quos corrupti accusantium quia unde laudantium similique!"</p>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card">
-              <h4>little header</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione.</p>
-              <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=83%C3%97100&w=30&h=30" alt="">
-              <p>Name</p>
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
+          <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+              <div class="card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde impedit adipisci error fuga nam corporis iure dolor optio pariatur aspernatur facere, et quibusdam eum nemo cumque, maiores nostrum. Eum, doloremque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem. Animi repellat quaerat culpa accusantium, quo dolorem. Accusamus explicabo quidem quod aliquid atque maxime repellendus maiores corporis? Iure, molestias, voluptate."</p>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card">
-              <h4>little header</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione.</p>
-              <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=83%C3%97100&w=30&h=30" alt="">
-              <p>Name</p>
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
+          <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+              <div class="card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione. minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione.minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione."</p>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+              </div>
             </div>
-          </div>
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
+          <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+              <div class="card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione."</p>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+              </div>
+            </div>
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
+           <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+              <div class="card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione."</p>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+              </div>
+            </div>
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
+           <div class="col-xs-12 col-sm-6 recommend-card">
+            <div class="card-wrapper">
+              <div class="card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero ipsum culpa reiciendis placeat amet, accusamus debitis asperiores neque aliquam minima eum velit voluptatum illo omnis deserunt necessitatibus ullam ratione."</p>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+              </div>
+            </div>
+            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p>
+          </div><!--recommend-card-->
+
         </div>
       </div>
     </section>
@@ -224,53 +281,80 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-3">
-            <h5>header</h5>
-            <ul>
-              <li><a href="">
-                <div class="logo">
-                  <img src="" alt="">
-                </div>
-              </a></li>
-              
-            </ul>
+          <div class="col-sm-12 footer-block">
+              <a href="#">
+               <img class="footer-logo" src="images/logo-white.svg" alt="PassfotoRosenheim.de">
+              </a>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <h5>header</h5>
+           <div class="col-sm-12 footer-block">
+            <h4 class="footer-header">header</h4>
             <ul>
               <li><a href="">link text</a></li>
               <li><a href="">link text</a></li>
               <li><a href="">link text</a></li>
             </ul>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <h5>header</h5>
+          <div class="col-sm-12 footer-block">
+            <h4 class="footer-header">Services für Geschäftskunden</h4>
             <ul>
               <li><a href="">link text</a></li>
               <li><a href="">link text</a></li>
               <li><a href="">link text</a></li>
             </ul>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <h5>header</h5>
+          <div class="col-sm-12 footer-block">
+            <h4 class="footer-header">Lexikon</h4>
             <ul>
-              <li><a href="">link text</a></li>
-              <li><a href="">link text</a></li>
-              <li><a href="">link text</a></li>
+              <li><a href="">Passbild-Größe</a></li>
+              <li><a href="">Visum-Foto</a></li>
+              <li><a href="">Quickshot</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 footer-block">
+            <h4 class="footer-header">Kontakt</h4>
+            <ul>
+              <li><a href="">Kontaktformular</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Jobs</a></li>
             </ul>
           </div>
         </div>
-        <div class="row">
-          <ul>
-            <li><a href="">Impressum</a></li>
-            <li><a href="">Datenschutz</a></li>
-          </ul>
+        <div class="row text-center footer-extra-info">
+         <div class="col-sm-12 footer-impressum-section">
+            <ul>
+             <li><a href="">Impressum</a></li>
+             <li><a href="">Datenschutz</a></li>
+           </ul>
+         </div>
+         <div class="col-sm-12 product-delivery-detail-description">
+            <ol>
+              <li>Alle angegebenen Preise sind Endpreise inkl. Liefer-/Versandkosten.
+                <br>
+                Alle angegebenen Preise sind bereits inkl. MwSt.
+              </li>
+              <li>Lieferung in spätestens 4 Werktagen ab Zahlungseingang.</li>
+              <li>Bestellungen mit Express-Option werden innerhalb von 2 Werktagen ab Zahlungseingang ausgeliefert.</li>
+           </ol>
+         </div>
         </div>
       </div>
+
+
+
+      <div class="container-fluid text-center footer-copyright">© 2011-2016 PassfotoRosenheim.de — all rights reserved</div>
     </footer>
 
 
-
+     <!-- facebook plug-in -->
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
     
@@ -300,6 +384,7 @@
        //  $('body').append(pageOverLay);
        // });  
        
+
 
 
       </script>
