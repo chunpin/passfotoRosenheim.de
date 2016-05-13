@@ -56,14 +56,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
 
           .hand-wrapper{
             .img-responsive{
-              max-width:100%;
+              max-width:120%;
             }
           }
-
-          .header{
-            font-size:3em;
-            font-weight:bold;
+          .text-center{
+              padding: 30px 10px 0px 10px;
+                  .header{
+                    font-size:3em;
+                    font-weight:bold;
+                  }
           }
+          
     }  
 }
 

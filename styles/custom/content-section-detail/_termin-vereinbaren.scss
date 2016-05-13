@@ -1,0 +1,97 @@
+.termin-vereinbaren{
+	text-align:center;
+	background-color:$orange-light;
+	padding-top:20px;
+	padding-bottom:20px;
+	.text-wrapper{
+		text-align:center;
+		color:$white;
+		font-weight:300;
+		span{
+			font-weight:bold;
+		}
+	}
+
+	.button-wrapper{
+		text-align:center;
+		.button{
+			background-color:$black;
+	   		color:$white;
+	   		border:none;
+	   		border-radius: none;
+	   		padding:10px;
+		}
+	   /*	margin:10px 10px 20px 10px;*/
+	}
+}/*.termin-vereinbaren*/
+
+
+@media screen and (min-width:768px) {
+	 .termin-vereinbaren{
+		text-align:right;
+		background-color:$orange-light;
+		padding-top:20px;
+		padding-bottom:20px;
+		.text-wrapper{
+			text-align:right;
+			padding:0;
+			color:$white;
+			font-weight:300;
+			span{
+				font-weight:bold;
+			}
+		}
+
+		.button-wrapper{
+			text-align:left;
+			.button{
+				background-color:$black;
+		   		color:$white;
+		   		border:none;
+		   		border-radius: none;
+		   		padding:10px;
+			}
+		   /*	margin:10px 10px 20px 10px;*/
+		}
+	}/*.termin-vereinbaren*/
+
+}/*@media screen and (min-width:768px)*/
+
+
+
+
+
+@media screen and (min-width:992px) {
+	 .termin-vereinbaren{
+		text-align:right;
+		background-color:$orange-light;
+		padding-top:20px;
+		padding-bottom:20px;
+		.text-wrapper{
+			text-align:right;
+			padding:0px 40px 0px 40px;
+			color:$white;
+			font-weight:300;
+			span{
+				font-weight:bold;
+			}
+		}
+
+		.button-wrapper{
+			text-align:left;
+			padding:0px 40px 0px 40px;
+			.button{
+				background-color:$black;
+		   		color:$white;
+		   		border:none;
+		   		border-radius: none;
+		   		padding:10px;
+			}
+		   /*	margin:10px 10px 20px 10px;*/
+		}
+	}/*.termin-vereinbaren*/
+
+}/*@media screen and (min-width:768px)*/
+
+
+
