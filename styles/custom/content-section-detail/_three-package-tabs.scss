@@ -1,0 +1,104 @@
+/* START OF 3 packages tabs*/
+.nav-tabs > li{
+	width:calc(100% / 3);
+}
+
+
+
+/* END OF 3 packages tabs*/
+
+
+
+
+
+/*START OF  three-packages-section*/
+.three-packages-section{
+  .container{
+  	padding-left:0;
+  	padding-right:0;
+    .nav-tabs{
+      	li {
+      		background-color:$tab-color;
+      		min-height:227px;
+      		&.active{
+      			border-top:5px solid $orange-light;
+      		}
+      		p{
+      		font-size:12px;
+      	    } 
+      	    a{
+              padding-left:5px;
+              padding-right:5px;
+              min-height:223px;
+                  .tab-image{
+                    width:70px;
+                    border:5px solid $white;
+                    box-shadow: 0px 0px 5px $shadow-color;
+                  }
+
+                  h5{
+	                color:$orange;
+	                font-size:bold;
+	              }
+	              p{
+                    color:$orange;
+	              }
+      	    }
+          }/*li*/
+    }/*.nav-tabs*/
+
+  	.tab-content{
+  		padding-left:15px;
+  		padding-right:15px;
+
+      .tab-pane{
+          .image-wrapper{
+              padding-top:15px;
+              padding-bottom:15px;
+              .detail-image{
+                  transform:rotate(-13deg);
+                  padding:10px;
+                  box-shadow: 0px 0px 5px $shadow-color;
+                  width:90px;
+              }
+          }
+
+          .checking-points{
+             padding-left:10%;
+             padding-right:10%;
+                  li {
+                      display: block;
+                      text-align:left;
+                  }
+
+                  li:before {
+                      /*Using a Bootstrap glyphicon as the bullet point*/
+                      content: "\e089";
+                      font-family: 'Glyphicons Halflings';
+                      font-size: 9px;
+                      float: left;
+                      margin-top: 4px;
+                      margin-left: -17px;
+                      color: $green;
+                  }/*li:before*/
+          }/*.checking-points*/
+      }/*.tab-pane*/
+  	}/*.tab-content*/
+  }/*.container*/
+
+}/*.three-packages-section*/
+
+
+
+
+
+@media screen and (min-width:768px) {
+   .three-packages-section{
+		  .container{
+		     box-shadow: 0px 0px 20px 0px $shadow-color;
+		     position:relative;
+			 top:-50px;
+		  }/*.container*/
+   }/*.three-packages-section*/
+}
+/*END OF three-packages-section*/

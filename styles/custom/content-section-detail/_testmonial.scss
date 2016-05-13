@@ -1,0 +1,33 @@
+/*START OF testmonial*/
+.testmonial{
+  color:$blue-gray;
+  .stars-block{
+      color:$gold;
+      margin-top:20px;
+      margin-bottom:20px;
+        .glyphicon{ 
+          font-size:2em;
+        }
+  }/*.stars-block*/
+
+  
+  .recommend-card{
+    margin-bottom:20px;
+
+      .card-wrapper{
+         padding-left:20px;
+         padding-right:20px;
+           .card{
+              background-color:$grey-sub-super-light;
+              border-bottom:5px solid $grey-super-light;
+              padding:10px 20px 10px 20px;
+              h5{
+                margin-top:20px;
+              }
+           }
+      }
+  }
+  
+ 
+}/*.testmonial*/
+/*END OF testmonial*/
