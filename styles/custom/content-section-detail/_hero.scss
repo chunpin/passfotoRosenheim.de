@@ -20,6 +20,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
     font-size:2em;
    }
 
+   .sub-header{
+    color:$white;
+    text-shadow: 0px 1px $black;
+   }
+
    .btn-default{
    	background-color:$black;
    	color:$white;
@@ -62,8 +67,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
           .text-center{
               padding: 30px 10px 0px 10px;
                   .header{
-                    font-size:3em;
+                    font-size:3.5em;
                     font-weight:bold;
+                  }
+                  .sub-header{
+                    font-size:1.8em;
                   }
           }
           

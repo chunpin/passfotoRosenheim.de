@@ -28,8 +28,12 @@ body{
     border: none;
   }
 
+
+
+
+
 #page-overlay{
-    visibility: visible;
+    display:none;
     z-index:200;
     position:fixed;
     top:0;
@@ -42,5 +46,4 @@ body{
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
 }
-
 
