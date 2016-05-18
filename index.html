@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-DE">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,45 +36,15 @@
 
   </head>
   <body >
-       <div class="navmenu navmenu-default navmenu-fixed-right offcanvas">
-      <a class="navmenu-brand" href="/index.html">Startseite</a>
-      <ul class="nav navmenu-nav">
-        <li><a href="/biometrische-passbilder-passfotos.html">Biometrische Passbilder</a></li>
-        <li class="active"><a href="/visum-fotos.html">Visum-Fotos</a></li>
-        <li><a href="/passbilder-schoene-portraits.html">QuickShot</a></li>
-        <li><a href="#">Kundenstimmen</a></li>
-      </ul>
-      <ul class="nav navmenu-nav">
-        <li><a href="#">Kontakt</a></li>
-        <!-- uncommend the code below to show up the dropdown menu -->
-      <!--   <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu navmenu-nav">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li> -->        
-      </ul>
-    </div>
 
-    <div class="navbar navbar-default navbar-fixed-top">
-      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+  <nav id="nav"></nav>
+     
 
 
     <section class="hero">
        <div class="container">
         <div class="row">
-          <img class="logo" src="images/logo.svg" alt="PassfotoRosenheim.de">
+          <img class="logo logo-wrapper" src="images/logo.svg" alt="PassfotoRosenheim.de">
         </div><!-- row -->
         <div class="row">
           <div class="col-xs-12 col-sm-5 hand-wrapper">
@@ -380,77 +350,7 @@
 
 
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 footer-block">
-              <a href="#">
-               <img class="footer-logo" src="images/logo-white.svg" alt="PassfotoRosenheim.de">
-              </a>
-          </div>
-           <div class="col-sm-4 footer-block">
-            <h4 class="footer-header">Produkte</h4>
-            <ul>
-              <li><a href="">Biometrische Passbilder</a></li>
-              <li><a href="">Passfotos</a></li>
-              <li><a href="">Visum-Fotos</a></li>
-              <li><a href="">QuickShot</a></li>
-            </ul>
-          </div>
-         <!--  <div class="col-sm-12 footer-block">
-            <h4 class="footer-header">Services für Geschäftskunden</h4>
-            <ul>
-              <li><a href="">link text</a></li>
-              <li><a href="">link text</a></li>
-              <li><a href="">link text</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-12 footer-block">
-            <h4 class="footer-header">Lexikon</h4>
-            <ul>
-              <li><a href="">Passbild-Größe</a></li>
-              <li><a href="">Visum-Foto</a></li>
-              <li><a href="">Quickshot</a></li>
-            </ul>
-          </div> -->
-          <div class="col-sm-4 footer-block">
-            <h4 class="footer-header">Kontakt</h4>
-            <ul>
-              <li><a href="#">Hotline 08031 221 40 40</a></li>
-              <li><a href="mailto:info@PassFotoRosenheim.de">E-Mail info@PassFotoRosenheim.de</a>
-              </li>
-              <li></li>
-              <li><a href="https://www.facebook.com/batchfield.de/?fref=ts" target="_blank">Facebook</a></li>
-              <li><a href="https://plus.google.com/115250796232722038829/about" target="_blank">Google+</a></li>
-              <li><a href="https://www.youtube.com/channel/UCwHi6X6SRGPOvpRoBmeBlbA" target="_blank">YouTube</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row text-center footer-extra-info">
-         <div class="col-sm-12 footer-impressum-section">
-            <ul>
-             <li><a href="#">Impressum</a></li>
-             <li><a href="#">Datenschutz</a></li>
-             <li><a href="#">Sitemap</a></li>
-           </ul>
-         </div>
-         <div class="col-sm-12 product-delivery-detail-description">
-            <ol>
-              <li>Alle angegebenen Preise sind Endpreise inkl. Liefer-/Versandkosten.
-                <br>
-                Alle angegebenen Preise sind bereits inkl. MwSt.
-              </li>
-              <li>Lieferung in spätestens 4 Werktagen ab Zahlungseingang.</li>
-              <li>Bestellungen mit Express-Option werden innerhalb von 2 Werktagen ab Zahlungseingang ausgeliefert.</li>
-           </ol>
-         </div>
-        </div>
-      </div>
-
-
-
-      <div class="container-fluid text-center footer-copyright">© 2016 PassFotoRosenheim.de</div>
-    </footer>
+    <footer id="footer"></footer>
 
 
 
@@ -486,6 +386,7 @@
       <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
       <script type="text/javascript" src="scripts/custom/transition.js"></script>
       <script type="text/javascript" src="scripts/custom/offcanvas.js"></script>
+      <script type="text/javascript" src="scripts/include.js"></script>
       <!-- endbuild -->
 
       <script>

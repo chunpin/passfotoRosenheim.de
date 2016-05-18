@@ -1,0 +1,37 @@
+.contact-hero{
+
+
+	.sub-section{
+		height:80px;
+		border-bottom:1px solid $grey-super-light;
+	}
+
+    .container{
+    		.contact-header{
+				text-align:center;
+				/*color:$white;*/
+			}
+
+
+			.contact-detail{
+				text-align:center;
+				color:$orange;
+				/*color:$white;*/
+				    .icon{
+				    	font-size:2.5em;
+				    }
+
+				 	.contact-method{
+				 	    font-size:1.3em;
+				 	    color:$grey-dark;
+				 	}
+					.border-deco{
+						border-bottom:2px solid $orange;
+						width:50px;
+						height:10px;
+						margin:0 auto;
+					}
+			}
+    }
+	
+}/*.hero.contact*/
