@@ -52,14 +52,23 @@
   		padding-right:15px;
 
       .tab-pane{
+      	  .detail-head-line{
+      	  	margin:0;
+      	  	padding:20px;
+      	  }
+      	  p{
+             color:$grey-light;
+             font-size:1.4em;
+             margin:0;
+             padding:10px;
+      	  }
           .image-wrapper{
               padding-top:15px;
               padding-bottom:15px;
               .detail-image{
                   transform:rotate(-13deg);
                   padding:10px;
-                  box-shadow: 0px 0px 5px $shadow-color;
-                  width:90px;
+                  width:200px;
               }
           }
 
@@ -69,6 +78,7 @@
                   li {
                       display: block;
                       text-align:left;
+                      font-size:1.25em;
                   }
 
                   li:before {
@@ -155,12 +165,11 @@
 			 		.image-wrapper{
 			 			padding-top:15px;
 			 			padding-bottom:15px;
-			 			.detail-image{
+			 			/*.detail-image{
 			 				transform:rotate(-13deg);
 			 				padding:10px;
-			 				box-shadow: 0px 0px 5px $shadow-color;
-			 				width:90px;
-			 			}
+			 				width:200px;
+			 			}*/
 			 		}
 
 			 		.checking-points{
