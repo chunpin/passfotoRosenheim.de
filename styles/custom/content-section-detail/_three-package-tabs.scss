@@ -123,8 +123,26 @@
                   }/*li:before*/
                   .shake-slow.shake-constant{
                   	animation: shake-slow 20s ease-in-out infinite;
+                  	background-color:$orange;
+                  	border:none;
+                  	color:$white;
                   }
           }/*.checking-points*/
+
+          .tab-pane-sub-content{
+				.garantie-image{
+					width:120px;
+				}
+				.garantie-text-wrapper{
+						.garantie-sub-headline{
+                            padding:0;
+                            margin:0;
+						}
+						.garantie-sub-body-text{
+                            padding:0;
+						}
+				}
+		  }/*.tab-pane-sub-content*/
       }/*.tab-pane*/
   	}/*.tab-content*/
   }/*.container*/
@@ -221,13 +239,26 @@
 			 				/*Using a Bootstrap glyphicon as the bullet point*/
 			 				content: "\e089";
 			 				font-family: 'Glyphicons Halflings';
-			 				font-size: 9px;
+			 				font-size: 1.1em;
 			 				float: left;
-			 				margin-top: 4px;
-			 				margin-left: -17px;
+			 				margin-top: 0px;
+			 				margin-left: -27px;
 			 				color: $green;
 			 			}/*li:before*/
 			 		}/*.checking-points*/
+
+
+			 		.tab-pane-sub-content{
+							width:90%;
+							margin:0 auto;
+							padding-bottom:40px;
+							.garantie-text-wrapper{
+								text-align:left;
+								padding-top:20px;
+								padding-left:60px;
+							}
+			 		}/*.tab-pane-sub-content*/
+
 			 	}/*.tab-pane*/
 			 }/*.tab-content*/
 
@@ -273,7 +304,11 @@
    
 }/*@media screen and (min-width:992px)*/
 
-
+@media screen and (min-width:1199px) {
+    .garantie-text-wrapper{
+    	padding-top:37px !important;
+    }
+}
 
 @media screen and (min-width:1200px) and (max-width:1300px){
 	.three-packages-section{
