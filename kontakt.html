@@ -83,11 +83,24 @@
  </div><!-- /.container -->
 </section><!-- contact-hero -->
 
+
+
+
+<!--Start of google map API-->
+<section class="container-fluid google-map">
+      <div id="map" class="section second-section" style="height:600px;"></div>
+</section>
+
+
+     
+  
+<!--End of google map API--> 
+
     
 
    
 
-
+ 
 
 
     <footer id="footer"></footer>
@@ -121,23 +134,90 @@
       <script type="text/javascript" src="scripts/include.js"></script>
       <!-- endbuild -->
 
-      <script>
-       // var pageOverLay = '<div id="page-overlay"></div>';
+
+       <!-- START OF google map API ,  remember! there are 2 scripts have to be injected in HTML,  update the API key on second script and update the url of image directory-->
+   <script type="text/javascript">
+   (function(){
+     var googleMapObj ={
+      init:function(){
+        this.cacheDOM();
+        this.render();
+      },
+      cacheDOM: function(){
+        this.$googleMap = $('.google-map');
+        this.$windowScreenWidth = $(window).width();
+      },
+      deleteClass:function(){
+        this.$googleMap.removeClass('container-fluid');
+      },
+      addClass:function(){
+        this.$googleMap.addClass('container-fluid');
+      },
+      controlScreenWithJs:function(){
+          if(this.$windowScreenWidth > 600){
+            this.deleteClass();
+          } else{
+            this.addClass();
+          }
+      },
+      render:function(){
+        this.controlScreenWithJs();
+      }
+    };
+    googleMapObj.init();
       
-       // $button.on('click',function(){
-       //  $('#page-overlay').toggle();
-       // });  
+   })();
 
-       // var $button = $('button');
 
-       // $button.click(function(){
-       //   $('#page-overlay').toggle();
-       // });
-       
 
-// $( "#foo" ).toggle( display );
 
-      </script>
+
+   function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: {lat: 47.8517136, lng: 12.1267768}
+      });
+
+
+
+      // set the batchfield icon as google map pin
+      var image = 'http://batchfield.de/MDL/images/batchfield_map_pin.png';
+
+      //var beachMarker = new google.maps.Marker({
+      var batchfieldMarker = new google.maps.Marker({
+        position: {lat: 47.8517136, lng: 12.1267768},
+        map: map,
+        icon: image
+      });
+
+
+      // disable the mouse scroll function
+      map.setOptions({'scrollwheel': false});
+
+
+
+      // changing the default map style
+      /*
+      var styles = [
+        {
+          "stylers": [
+            { "hue": "#006eff" },
+            { "gamma": 0.18 },
+            { "saturation": 50 }
+          ]
+        }
+      ];
+
+      map.setOptions({styles: styles});
+      */
+
+    }
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyjWWsL826rlfihBr7FvKCepMiKjn1IeI&callback=initMap"
+        async defer></script>
+    <!-- END OF google map API-->
 
   </body>
 </html>
