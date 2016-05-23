@@ -3,6 +3,19 @@
   color:$blue-gray;
     .card{
       margin-bottom:30px;
+      		.how-it-works-icons{
+      			width:60%;
+      		}
+      		.button{
+      			background-color:$blue-light;
+      			border:1px solid $blue-light;
+      			transition:all .3s ease-in-out;
+      			&:hover{
+      				background-color:$black;
+      				border:1px solid $black;
+      				color:$white;
+      			}
+      		}
     }
 }
 /* END OF how it works section*/
