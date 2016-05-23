@@ -59,8 +59,24 @@
 //custom css
 @import "custom/custom-variable";
 @import "custom/jasny-bootstrap";
-@import "custom/navbar";
-@import "custom/content";
+
+
+	//navbar
+	@import "custom/nav/navbar";
+
+	//content
+	@import "custom/content";
+
+    //footer
+	@import "custom/footer/footer";
+
+
+
+
+
+
+
+
 
 
 //cssahke

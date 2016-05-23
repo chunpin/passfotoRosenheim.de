@@ -37,10 +37,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    .shake-slow:hover, .shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant{
     animation: shake-slow 20s ease-in-out infinite;
    }
-   .logo{
-   	margin-top:10px;
-   	height:50px;
-   }
+  
    .hand-wrapper{
    	min-height:150px;
     padding:0;
@@ -51,19 +48,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    }
 }
 
+ .logo{
+    margin-top:5px;
+    width:200px;
+}
+/*.hero*/
+
 
 
 @media screen and (min-width:768px) {
+    .logo{
+      margin-top:5px;
+      width:350px;
+    }/*.logo*/
     .hero{
           .container{
             min-height:580px;
-          }
+          }/*container*/
 
           .hand-wrapper{
             .img-responsive{
               max-width:120%;
             }
-          }
+          }/*hand-wrapper*/
           .text-center{
               padding: 30px 10px 0px 10px;
                   .header{
@@ -73,7 +80,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
                   .sub-header{
                     font-size:1.8em;
                   }
-          }
+                  .btn-default{
+                    margin:30px 10px 184px 10px;
+                  }
+          }/*text-center*/
+
+         
           
     }  
 }

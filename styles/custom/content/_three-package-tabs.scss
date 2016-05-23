@@ -30,6 +30,7 @@
               padding-left:5px;
               padding-right:5px;
               min-height:223px;
+              border-radius: 0;
                   .tab-image{
                     width:70px;
                     border:5px solid $white;
@@ -169,11 +170,11 @@
 		  .container{
 		     box-shadow: 0px 0px 20px 0px $shadow-color;
 		     position:relative;
-			 top:-204px;
+			 top:-132px;
 			 .nav-tabs{
 			 	li {
 			 		
-			 		min-height:205px;
+			 		min-height:132px;
 			 		&.active{
 			 		
 			 		}
@@ -182,7 +183,7 @@
 			 		} 
 			 		a{
 			 			
-			 			min-height:205px;
+			 			min-height:126px;
 			 			.tab-image{
 			 				width:70px;
 			 				display:inline-block;
@@ -193,6 +194,7 @@
 			 				padding-left:15px;
 			 				display:inline-block;
 			 				float:right;
+			 				margin-top:-12px;
 			 					h5{
 					 				font-size:1.1em;
 					 				text-align:left;
@@ -288,6 +290,7 @@
 
 @media screen and (min-width:992px){
 	.three-packages-section{
+
 			.detail-image{
 			 	position:relative;
 			 	left:0;
@@ -311,6 +314,8 @@
 						}
 				 }
       	  	}/*.tab-content{*/
+
+
 	}
    
 }/*@media screen and (min-width:992px)*/
@@ -329,6 +334,20 @@
 @media screen and (min-width:1199px) {
     .garantie-text-wrapper{
     	padding-top:37px !important;
+    }
+    .three-packages-section{
+		    .container{
+				.nav-tabs{
+					li {
+					 		
+					 a{
+					 	.tabs-text-wrapper{
+					 		margin-top:0px;	
+					 	}
+					 }
+					}/*li*/
+				}/*.nav-tabs*/
+			} /*.container*/
     }
 }
 
