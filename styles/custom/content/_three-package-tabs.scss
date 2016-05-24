@@ -225,9 +225,10 @@
 			 		.image-wrapper{
 			 			padding-top:15px;
 			 			padding-bottom:15px;
-			 			.detail-image{
+			 			padding-left:10%;
+			 			/*.detail-image{
 			 				position:relative;
-			 			}
+			 			}*/
 			 		}
 
 			 		.checking-points{
@@ -276,26 +277,17 @@
 
 
 
-@media screen and (min-width:857px){
-	.three-packages-section{
-			.detail-image{
-			 	position:relative;
-			 	left:-50%;
-			 }
-	}
-   
-}/*@media screen and (min-width:857px)*/
 
 
 
 @media screen and (min-width:992px){
 	.three-packages-section{
-
+/*
 			.detail-image{
 			 	position:relative;
 			 	left:0;
 			 	width:270px !important;
-			 }
+			 }*/
 			 .tab-content{
 		  		padding-left:15px;
 		  		padding-right:15px;
@@ -321,15 +313,7 @@
 }/*@media screen and (min-width:992px)*/
 
 
-@media screen and (min-width:1100px){
-	.three-packages-section{
-			.detail-image{
-			 	position:relative;
-			 	left:-50%;
-			 }	
-	}
-   
-}/*@media screen and (min-width:992px)*/
+
 
 @media screen and (min-width:1199px) {
     .garantie-text-wrapper{
@@ -351,14 +335,5 @@
     }
 }
 
-@media screen and (min-width:1200px) and (max-width:1300px){
-	.three-packages-section{
-			.detail-image{
-			 	position:relative;
-			 	left:0;
-			 }
-	}
-   
-}/*@media screen and (min-width:992px)*/
 
 /*END OF three-packages-section*/

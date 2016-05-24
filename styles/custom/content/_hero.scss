@@ -9,7 +9,9 @@ background: -ms-linear-gradient(top, $orange-light 0%, $orange 100%);
 background: linear-gradient(to bottom, $orange-light 0%, $orange 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff9500', GradientType=0 );
    
-
+   .container{
+    padding:0;
+   }
    .container .row{
    	margin-left:0;
    	margin-right:0;
@@ -39,13 +41,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    }
   
    .hand-wrapper{
-   	min-height:150px;
-    padding:0;
-   	.img-responsive{
-   		max-width:66%;
-   		margin:0 auto;
-   	}
-   }
+     	min-height:150px;
+      padding: 20px 0px 0px 0px;
+     	.img-responsive{
+     		max-width:50%;
+     		margin:0 auto;
+        transform: rotate(8deg);
+        box-shadow: 0px 0px 25px $black-trans;
+     	}
+   }/*hand-wrapper*/
+
+   .text-wrapper{
+     padding-left:0;
+     padding-right:0;
+   }/*text-wrapper*/
 }
 
  .logo{
@@ -64,15 +73,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
     .hero{
           .container{
             min-height:580px;
+            padding-left:15px;
+            padding-right:15px;
           }/*container*/
 
           .hand-wrapper{
-            .img-responsive{
-              max-width:120%;
-            }
-          }/*hand-wrapper*/
-          .text-center{
-              padding: 30px 10px 0px 10px;
+              .img-responsive{
+               max-width:100%;
+              }
+          } /*.hand-wrapper*/
+
+        
+          .text-wrapper{
+              padding: 30px 15px 0px 40px;
                   .header{
                     font-size:42px;
                     font-weight:bold;
@@ -88,6 +101,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
          
           
     }  
+}
+
+
+@media screen and (min-width:992px) {
+   .hero{
+        .hand-wrapper{
+            .img-responsive{
+              max-width:75%;
+            }
+        }
+   }  
+}
+
+
+@media screen and (min-width:992px) {
+   .hero{
+        .hand-wrapper{
+            .img-responsive{
+              max-width:50%;
+            }
+        }
+   }  
 }
 
 /*END OF hero section*/
