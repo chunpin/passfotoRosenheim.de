@@ -10,6 +10,9 @@
     		.contact-header{
 				text-align:center;
 				/*color:$white;*/
+				p,a{
+					margin-bottom:20px;
+				}
 			}
 
 
@@ -18,7 +21,11 @@
 				color:$orange;
 				/*color:$white;*/
 				    .card{
-				    	margin-bottom:20px;
+				    	margin-bottom:40px;
+				    	p,a{
+				    		color:$orange;
+				    		margin-top:10px;
+				    	}
 				    }
 				    .icon{
 				    	font-size:2.5em;
@@ -28,6 +35,8 @@
 				 	.contact-method{
 				 	    font-size:1.3em;
 				 	    color:$grey-dark;
+				 	    margin-top:10px
+
 				 	}
 					.border-deco{
 						border-bottom:2px solid $orange;
@@ -44,6 +53,38 @@
 
 
 @media screen and (min-width:500px) {
+   .contact-hero{
+   		.container{
+   			.contact-detail{
+   				.icon{
+   					img{
+   						width:180px;
+   					}
+   				}
+   			}
+   		}
+   }	
+}
+
+
+
+
+@media screen and (min-width:768px) {
+   .contact-hero{
+   		.container{
+   			.contact-detail{
+   				.icon{
+   					img{
+   						width:160px;
+   					}
+   				}
+   			}
+   		}
+   }	
+}
+
+
+@media screen and (min-width:992px) {
    .contact-hero{
    		.container{
    			.contact-detail{
