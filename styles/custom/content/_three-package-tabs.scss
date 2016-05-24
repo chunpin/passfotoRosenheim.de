@@ -19,7 +19,7 @@
     .nav-tabs{
       	li {
       		background-color:$tab-color;
-      		min-height:227px;
+      		min-height:164px;
       		&.active{
       			border-top:5px solid $orange-light;
       		}
@@ -29,7 +29,7 @@
       	    a{
               padding-left:5px;
               padding-right:5px;
-              min-height:223px;
+              min-height:158px;
               border-radius: 0;
                   .tab-image{
                     width:70px;
