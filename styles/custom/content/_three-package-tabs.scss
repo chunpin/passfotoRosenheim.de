@@ -21,7 +21,7 @@
       		background-color:$tab-color;
       		min-height:164px;
       		&.active{
-      			border-top:5px solid $orange-light;
+      			/*border-top:5px solid $orange-light;*/
       		}
       		p{
       		font-size:12px;
@@ -40,6 +40,7 @@
                   h5{
 	                color:$orange;
 	                font-weight:bold;
+	                margin-bottom:0;
 	              }
 	              p{
                     color:$orange;
@@ -55,14 +56,17 @@
       .tab-pane{
       	  .detail-head-line{
       	  	margin:0;
-      	  	padding:20px;
+      	  	padding:20px 0px 20px 0px;
+      	  	font-size: 18px;
+    		font-weight: bold;
       	  }
+
       	  .price-wrapper{
       	  	background-color:$blue;
       	  	color:$white;
       	  	font-size:1.5em;
-      	  	width:120px;
-      	  	height:120px;
+      	  	width:4.21em;
+      	  	height:4.21em;
       	  	margin:0 auto;
       	  	border-radius: 100%; 
     	  	position:relative;
@@ -77,7 +81,8 @@
       	  			position:absolute;
       	  			left:50%;
       	  			top:50%;
-      	  			font-size:1.1em;
+      	  			font-size:0.8em;
+      	  			line-height: 24px;
       	  			transform:translate(-50%, -50%);
       	  			span{
       	  				font-size:1.7em;
@@ -86,7 +91,8 @@
       	  }
       	  p{
              color:$grey-light;
-             font-size:1.4em;
+             font-size:16px;
+             line-height: 23px;
              margin:0;
              padding:10px;
       	  }
@@ -116,7 +122,7 @@
                       /*Using a Bootstrap glyphicon as the bullet point*/
                       content: "\e089";
                       font-family: 'Glyphicons Halflings';
-                      font-size: 9px;
+                      font-size: 13px;
                       float: left;
                       margin-top: 4px;
                       margin-left: -17px;
@@ -128,6 +134,7 @@
                   	border:none;
                   	color:$white;
                   	margin:20px 0px 40px 0px;
+                  	font-size:19px;
                   }
           }/*.checking-points*/
 
@@ -135,6 +142,9 @@
           	    border-top:1px solid $grey-super-light;
           	    padding-top: 30px;
     			padding-bottom: 30px;
+    			width:80%;
+    			margin-left:auto;
+    			margin-right:auto;
 				.garantie-image{
 					width:120px;
 				}

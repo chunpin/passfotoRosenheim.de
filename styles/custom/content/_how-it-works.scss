@@ -1,8 +1,13 @@
 /* START OF how it works section*/
 .how-it-works{
+  background-color:$grey-bg;
   color:$blue-gray;
+    .container > .row > h3{
+      font-size:43px;
+      padding:50px 0px;
+    }
     .card{
-      margin-bottom:30px;
+      margin-bottom:90px;
       		.how-it-works-icons{
       			width:60%;
       		}
@@ -17,5 +22,24 @@
       			}
       		}	
     }
+
+    #card_1:before{
+      content:"1";
+    }
+    #card_2:before{
+      content:"2";
+    }
+    #card_3:before{
+      content:"3";
+    }
+
+    #card_1:before,#card_2:before,#card_3:before{
+      position: absolute;
+      top: 0;
+      left: 45px;
+      font-size: 50px;
+      color: $white;
+    }
+
 }
 /* END OF how it works section*/

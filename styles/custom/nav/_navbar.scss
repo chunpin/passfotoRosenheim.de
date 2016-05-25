@@ -20,12 +20,15 @@ body{
 
 .navbar-toggle {
     display: block; /* force showing the toggle */
+    border:none;
+    margin-right:1px;
   }
 
 .navbar {
     left: auto;
     background: none;
     border: none;
+    margin-top:13px;
   }
 
 
