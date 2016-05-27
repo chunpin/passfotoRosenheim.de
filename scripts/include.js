@@ -184,3 +184,16 @@ $(document).ready(function(){
 
 
 
+
+//changing the html of every telephone button for the entire website
+$(document).ready(function(){
+  var telephone = "08031-2214040";
+  var space = '&nbsp;&nbsp;&nbsp;';
+  var glyphiconHtml = '<span class="glyphicon glyphicon-earphone"></span>';
+
+  var buttonHtmlStr = glyphiconHtml + space + telephone;
+  $('.btn.btn-default').html(buttonHtmlStr);
+});
+
+
+
