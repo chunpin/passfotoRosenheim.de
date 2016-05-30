@@ -84,7 +84,7 @@
           </li>
           <li role="presentation">
             <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-            <img class="tab-image" src="/images/pass_single.jpg" alt="Visum-Foto">
+            <img class="tab-image" src="/images/passfoto-rosenheim-visum-foto-high-res.jpg" alt="Visum-Foto">
             <div class="tabs-text-wrapper">
               <h5>Visum-Foto</h5>
               <p>Visum, USA, Indien, Reisepass, Botschaftsdokumente</p>
@@ -93,7 +93,7 @@
           </li>
           <li role="presentation">
             <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-            <img class="tab-image" src="/images/pass_single.jpg" alt="Quickshot">
+            <img class="tab-image" src="/images/passfoto-rosenheim-quick_shot_high_res.jpg" alt="Quickshot">
             <div class="tabs-text-wrapper">
               <h5>Quick Shot</h5>
               <p>Passfotos und schöne Portraits von dir</p>
@@ -105,23 +105,29 @@
         <!-- Tab panes -->
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane fade in active" id="home">
-              <h3 class="detail-head-line">6 Passbilder in nur 5 Minuten</h3>
+
+<!--               <h3 class="detail-headline">6 Passbilder in nur 5 Minuten</h3>
               <p>Hergestellt auf Premium Hochglanz-Fotopapier & zugeschnitten</p>
-              <div class="price-wrapper"><div class="price">nur<br><span>10&nbsp;€</span></div></div><!-- price-wrapper -->
+              <div class="price-wrapper"><div class="price">nur<br><span>10&nbsp;€</span></div></div> -->
               
               <div class="tab-pane-content row">
                 <div class="col-xs-12 col-sm-4 image-wrapper">
-                  <img class="detail-image" src="/images/passfoto-rosenheim-biometrische-passbilder-big-trans-bg.png" alt="passfoto-rosenheim-biometrische-passbilder-big.jpg">
+                  <img class="detail-image" id="passbilder" src="/images/passfoto-rosenheim-biometrische-passbilder-big-trans-bg.png" alt="passfoto-rosenheim-biometrische-passbilder-big.jpg">
                 </div>
 
                <div class="col-xs-12 col-sm-8 checking-points">
+                  <h3 class="detail-headline">6 Passbilder in nur 5 Minuten</h3>
+                  <p class="detail-sub-headline">Hergestellt auf Premium Hochglanz-Fotopapier & zugeschnitten</p>
+                  <div class="price-big-wrapper">
+                    <div class="price-wrapper"><div class="price">nur<br><span>10&nbsp;€</span></div></div>
+                  </div>
                   <ul>
                    <li>100% Bewilligungsrate durch die Ämter GARANTIERT!</li>
                    <li>fotografiert durch einen professionellen Fotografen</li>
                    <li>super schnell fertig in nur 5 Minuten </li>
                    <li>sofort mitnehmen</li>
                  </ul>
-                 <a class="btn btn-default shake-slow shake-constant" href="tel:+49-08031-2214040">
+                 <a class="btn btn-default" id="three-package-button" href="tel:+49-08031-2214040">
                 08031-2214040 &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>
             </a>
                </div><!-- col-xs-12 col-sm-9 checking-points -->
@@ -140,13 +146,13 @@
 
 
           <div role="tabpanel" class="tab-pane fade in" id="profile">
-              <h3 class="detail-head-line">4 Visum-Fotos in nur 5 Minuten</h3>
+              <h3 class="detail-headline">4 Visum-Fotos in nur 5 Minuten</h3>
               <p>Hergestellt auf Premium Hochglanz-Fotopapier & zugeschnitten</p>
               <div class="price-wrapper"><div class="price">nur<br><span>19&nbsp;€</span></div></div><!-- price-wrapper -->
               
               <div class="tab-pane-content row">
                 <div class="col-xs-12 col-sm-4 image-wrapper">
-                  <img class="detail-image" src="/images/passfoto-rosenheim-biometrische-passbilder-big-trans-bg.png" alt="passfoto-rosenheim-biometrische-passbilder-big.jpg">
+                  <img class="detail-image" id="visum-foto" src="/images/passfoto-rosenheim-visum-foto-high-res-trans-bg.png" alt="passfoto-rosenheim-visum-foto">
                 </div><!-- col-xs-12 col-sm-3 image-wrapper -->
                 <div class="col-xs-12 col-sm-8 checking-points">
                   <ul>
@@ -172,12 +178,12 @@
           </div><!-- tab-pane fade in -->
 
           <div role="tabpanel" class="tab-pane fade in" id="messages">
-              <h3 class="detail-head-line">6 Passbilder und 2 schöne Portraits nur 15 Minuten</h3>
+              <h3 class="detail-headline">6 Passbilder und 2 schöne Portraits nur 15 Minuten</h3>
               <p>Hergestellt auf Premium Hochglanz-Fotopapier & zugeschnitten</p>
               <div class="price-wrapper"><div class="price">nur<br><span>29&nbsp;€</span></div></div><!-- price-wrapper -->
              <div class="tab-pane-content row">
                 <div class="col-xs-12 col-sm-4 image-wrapper">
-                  <img class="detail-image" src="/images/passfoto-rosenheim-biometrische-passbilder-big-trans-bg.png" alt="passfoto-rosenheim-biometrische-passbilder-big.jpg">
+                  <img class="detail-image" id="quick-shot" src="/images/passfoto-rosenheim-quick-shot-high-res-trans-bg.png" alt="passfoto-rosenheim-quick-shot">
                 </div>
                <div class="col-xs-12 col-sm-8 checking-points">
                  <ul>
@@ -408,7 +414,29 @@
       <script type="text/javascript" src="scripts/include.js"></script>
       <!-- endbuild -->
 
+<script>
 
+
+// enable the animation triger by hover over the button in .checking-points element within 'three-packages-section'
+  $('#three-package-button').hover(function(){
+    $(this).siblings('ul').css('padding-left','50px');
+    // $(this).siblings('.price-big-wrapper').css('right','-40px');
+    $(this).siblings('.price-big-wrapper').animate({right:'-=10px'},0)
+    // $(this).siblings('.price-big-wrapper').find('.price-wrapper').css('transform','rotate(' + 180 + 'deg)');
+
+    }, function(){
+       $(this).siblings('ul').css('padding-left','40px');
+       // $(this).siblings('.price-big-wrapper').css('right','-30px');
+       $(this).siblings('.price-big-wrapper').animate({right:'+=10px'},0)
+       // $(this).siblings('.price-big-wrapper').find('.price-wrapper').css('transform','rotate(' + 0 + 'deg)');
+    }
+  );
+
+
+
+
+
+</script>
 
 
   </body>
