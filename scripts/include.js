@@ -47,7 +47,7 @@ $(document).ready(function(){
         this.$navTabs.text(emptyStr);
       },
       controlScreenWithJs:function(){
-          if(this.$windowScreenWidth > 650){
+          if(this.$windowScreenWidth > 768){
             this.deleteClass();
           } else { 
             this.addClass();

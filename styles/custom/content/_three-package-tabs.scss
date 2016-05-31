@@ -21,26 +21,51 @@
   	flex-wrap:wrap;
   	flex-direction: row;*/
   	/*align-items: stretch;*/
+  	   border:0;
 		li{
 			/*flex-grow:1;*/
-			height:240px;
+			height:187px;
 			margin:0;
 				a{
 					display:flex;
   					flex-wrap:wrap;
   					flex-direction: row;
   					justify-content:center;
-					background-color:pink;
+  					align-items: center;
+					background-color:$grey-sub-super-light;
+					border:1px solid $grey-super-light;
 					margin:0;
 					border-radius:0;
+					padding:0;
 					height:100%;
+					cursor: pointer;
  						.tab-image-wrapper{
+ 							width:100%;
+ 							display:flex;
+ 							flex-wrap:wrap;
+ 							justify-content:center;
+ 							align-items: center;
+ 							height:135px;
 							img{
 								width:80px;
 							}
  						}
 						.tabs-text-wrapper{
-							background-color:green;
+							width:100%;
+							min-height:40px;
+							display:flex;
+ 							flex-wrap:wrap;
+ 							justify-content:center;
+ 							align-items: baseline;
+								h5{
+									margin-top:0;
+									margin-bottom:0;
+									color:$orange;
+									font-weight:bold;
+								}
+								p{
+									color:$orange;
+								}
 						}
 				}
 		}
@@ -205,6 +230,42 @@
 
 @media screen and (min-width:768px) {
    .three-packages-section{
+		   	  ul.nav-tabs{
+		  /*	display:flex;
+		  	flex-wrap:wrap;
+		  	flex-direction: row;*/
+		  	/*align-items: stretch;*/
+				li{
+					/*flex-grow:1;*/
+					height:140px;
+					margin:0;
+						a{	
+							padding:0px 5px;
+		 						.tab-image-wrapper{
+		 						   width:80px;
+									img{
+										width:70px;
+									}
+		 						}
+								.tabs-text-wrapper{
+									align-self:flex-start;
+									justify-content:flex-start;
+     								padding:0 5px;
+ 									/*align-items: baseline;*/
+									margin-top:29px;
+									width: calc(100% - 80px);
+									h5{
+										text-align: left;
+									}
+									p{
+										text-align:left;
+									}
+
+								}
+						}
+				}
+		  }/*.nav-tabs*/
+
    		  background-color:$tab-color;
    		  max-height:748px;
 		  .container{
@@ -315,6 +376,46 @@
 @media screen and (min-width:992px){
 	.three-packages-section{
 			 max-height:748px;
+
+			ul.nav-tabs{
+		  /*	display:flex;
+		  	flex-wrap:wrap;
+		  	flex-direction: row;*/
+		  	/*align-items: stretch;*/
+				li{
+					/*flex-grow:1;*/
+					height:140px;
+					margin:0;
+						a{	
+							padding:0px 5px;
+		 						.tab-image-wrapper{
+		 						   width:80px;
+									img{
+										width:70px;
+									}
+		 						}
+								.tabs-text-wrapper{
+									align-self:flex-start;
+									justify-content:flex-start;
+     								padding:0 5px;
+ 									/*align-items: baseline;*/
+									margin-top:42px;
+									width: calc(100% - 80px);
+									h5{
+										text-align: left;
+									}
+									p{
+										text-align:left;
+									}
+
+								}
+						}
+				}
+		  }/*.nav-tabs*/
+
+			
+
+
 			 .tab-content{
 		  		padding-left:15px;
 		  		padding-right:15px;
