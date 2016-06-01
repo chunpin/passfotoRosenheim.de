@@ -35,6 +35,7 @@ $(document).ready(function(){
         this.$googleMap = $('.google-map');
         this.$windowScreenWidth = $(window).width();
         this.$navTabs = $('.nav.nav-tabs').find('p');
+        // this.$breakLine = $('#break-line');
       },
       deleteClass:function(){
         this.$googleMap.removeClass('container-fluid');
@@ -42,6 +43,9 @@ $(document).ready(function(){
       addClass:function(){
         this.$googleMap.addClass('container-fluid');
       },
+      // deleteElement:function(){
+      //   this.$breakLine.remove();
+      // },
       emptyHtmlContent:function(){
         var emptyStr = "";
         this.$navTabs.text(emptyStr);
@@ -52,6 +56,7 @@ $(document).ready(function(){
           } else { 
             this.addClass();
             this.emptyHtmlContent();
+            // this.deleteElement();
           };
       },
       render:function(){

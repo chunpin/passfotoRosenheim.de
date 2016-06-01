@@ -19,14 +19,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    .header{
    	color:$white;
     text-shadow: 0px 1px $black;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
+   }
+   .header.first{
+      font-size:40px;
+   }
+   .header.second{
+      margin:0;
    }
 
    .sub-header{
     color:$white;
     text-shadow: 0px 1px $black;
     font-size:16px;
+    margin-bottom:25px;
    }
 
    .btn-default{
@@ -85,6 +92,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
           .hand-wrapper{
               .img-responsive{
                max-width:100%;
+               margin-top:64px;
+               transform:rotate(-15deg);
               }
           } /*.hand-wrapper*/
 
@@ -92,14 +101,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
           .text-wrapper{
               padding: 30px 15px 0px 40px;
                   .header{
-                    font-size:42px;
-                    font-weight:bold;
+                    font-size:40px;
                   }
+      
                   .sub-header{
                     font-size:22px;
+                    margin-bottom:210px;
                   }
                   .btn-default{
-                    margin:30px 10px 184px 10px;
+                   /* margin:30px 10px 184px 10px;*/
+                    padding:15px 50px;
+                    font-weight:bold;
+                    font-size:26px;
                   }
           }/*text-center*/
 
@@ -113,21 +126,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    .hero{
         .hand-wrapper{
             .img-responsive{
-              max-width:75%;
+              max-width:70%;
+              margin-top:65px;
             }
         }
    }  
 }
 
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:1200px) {
    .hero{
         .hand-wrapper{
             .img-responsive{
-              max-width:50%;
+              max-width:60%;
+              margin-top:37px;
             }
         }
    }  
 }
+
 
 /*END OF hero section*/
