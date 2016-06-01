@@ -67,6 +67,24 @@ footer{
       padding-bottom:15px;
   }/*.footer-copyright*/
 
+
+
+
+
+  .social-slide{
+      background-image: url("../images/rollover_facebook.png");
+      background-size: 32px auto;
+      height: 32px;
+      width: 32px;
+      margin-right: 10px;
+      float: left;
+      transition: all ease 0.3s;
+      &:hover{
+        background-position:0px -32px;
+      };
+  }
+
+
   
 }/*footer*/
 
