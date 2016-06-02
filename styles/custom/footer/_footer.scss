@@ -48,6 +48,7 @@ footer{
      padding-top:30px; 
      padding-left:15px;
      padding-right:15px;
+     margin-top:20px;
         .product-delivery-detail-description{
             font-size:11px;
             color:$grey-sub-light;
@@ -72,7 +73,6 @@ footer{
 
 
   .social-slide{
-      background-image: url("../images/rollover_facebook.png");
       background-size: 32px auto;
       height: 32px;
       width: 32px;
@@ -85,6 +85,17 @@ footer{
   }
 
 
+  .rollover-facebook{
+    background-image:url("/images/rollover_facebook.png");
+  }
+  .rollover-google-plus{
+    background-image:url("/images/rollover_google-plus.png");
+  }
+  .rollover-youtube{
+    background-image:url("/images/rollover_youtube.png");
+  }
+
+
   
 }/*footer*/
 
@@ -92,10 +103,10 @@ footer{
 
 
 @media screen and (min-width:768px) {
- /* footer{
-    .footer-block{
-      width:20%;
-    }
-  } */
+   footer{
+      .footer-extra-info{
+        margin-top:0px;
+      }
+   }
 }
 /*END OF  footer section*/
