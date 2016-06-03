@@ -28,13 +28,13 @@
 			margin:0;
 			&.active a{
 				background-color:$white;
-				border-bottom:$white;
+				border-bottom:1px solid $white;
 				.tabs-text-wrapper{
 					h5{
-						color:$black;
+						color:$orange;
 					}
 					p{
-						color:$black;
+						color:$orange;
 					}
 				}
 			};
@@ -65,10 +65,10 @@
 						border-bottom:1px solid $white;
 						.tabs-text-wrapper{
 							h5{
-								color:black;
+								color:$orange;
 							}
 							p{
-						color:black;
+								color:$orange;
 							}
 						}
 					}
@@ -94,11 +94,11 @@
 								h5{
 									margin-top:0;
 									margin-bottom:0;
-									color:$orange;
+									color:$black-light;
 									font-weight:bold;
 								}
 								p{
-									color:$orange;
+									color:$black-light;
 								}
 						}
 				}/*a*/

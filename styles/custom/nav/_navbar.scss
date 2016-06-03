@@ -18,6 +18,44 @@ body{
   padding:0;
 }
 
+.navbar-default{
+    background-color: transparent;
+    .navbar-toggle{
+        .icon-bar{
+             width:25px;
+             height:3px;
+             background-color:$black;
+        }
+    }
+    .navbar-toggle:hover{
+        background-color: transparent;
+        .icon-bar{
+            background-color: grey;
+        }
+    }
+    .navbar-toggle:focus{
+        background-color: transparent;
+          .icon-bar{
+              background-color: grey;
+          }
+    }
+}
+
+
+.navbar-default .navbar-toggle:after{
+  content:"MENU";
+  font-size:9px;
+  font-weight:bold;
+}
+.navbar-default .navbar-toggle:hover:after,.navbar-default .navbar-toggle:focus:after{
+  color:grey;
+}
+
+
+
+
+
+
 .navbar-toggle {
     display: block; /* force showing the toggle */
     border:none;
