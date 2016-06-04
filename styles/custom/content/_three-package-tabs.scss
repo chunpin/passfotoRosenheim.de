@@ -137,8 +137,11 @@
       	  }
 
       	  .price-wrapper{
-      	  	background-color:$blue;
-      	  	color:$white;
+      	  	/*background-color:$blue;*/
+      	  	background-image: url('/images/price-tag-bg.png');
+      	  	background-size:cover;
+      	  	background-repeat:no-repeat;
+      	  	color:$black;
       	  	font-size:1.5em;
       	  	width:4.21em;
       	  	height:4.21em;
@@ -148,8 +151,7 @@
       	  	transform:rotate(10deg);
       	  	transition:all 1s ease-in-out;
       	  	&:hover{
-      	  		transform:rotate(360deg);
-      	  		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+      	  		transform: rotate(370deg);
       	  	};
 
       	  		.price{
@@ -157,6 +159,7 @@
       	  			left:50%;
       	  			top:50%;
       	  			font-size:0.8em;
+      	  			font-weight:bold;
       	  			line-height: 24px;
       	  			transform:translate(-50%, -50%);
       	  			span{
@@ -264,29 +267,31 @@
 @media screen and (min-width:768px) {
    .three-packages-section{
 		   	  ul.nav-tabs{
+		   	  	height:130px;
 		  /*	display:flex;
 		  	flex-wrap:wrap;
 		  	flex-direction: row;*/
 		  	/*align-items: stretch;*/
 				li{
 					/*flex-grow:1;*/
-					height:140px;
+					height:100%;
 					margin:0;
 						a{	
 							padding:0px 10px;
+							/*height:130px;*/
 		 						.tab-image-wrapper{
-		 						   width:80px;
+		 						   width:75px;
 									.detail-image{
 										width:70px;
-										margin-top:0;
+										margin-top:35;
 									}
 		 						}
 								.tabs-text-wrapper{
 									align-self:flex-start;
 									justify-content:flex-start;
-     								padding:0 5px;
+     								padding:0px 14px;
  									/*align-items: baseline;*/
-									margin-top:29px;
+									margin-top:25px;
 									width: calc(100% - 80px);
 									h5{
 										text-align: left;
@@ -297,6 +302,7 @@
 										text-align:left;
 										line-height:16px;
 										padding-left:2px;
+										font-size:13px;
 									}
 
 								}
@@ -309,7 +315,7 @@
 		  .container{
 		     /*box-shadow: 0px 0px 20px 0px $shadow-color;*/
 		     position:relative;
-			 top:-140px;
+			 top:-130px;
 
 
 
@@ -341,7 +347,7 @@
 			 			padding:30px;
 			 		}
 			 		.image-wrapper{
-			 			padding-top:135px;
+			 			padding-top:35px;
 			 			padding-bottom:15px;
 			 			padding-left:0;
 			 			padding-right:0;
@@ -353,16 +359,19 @@
 			 		}
 
 			 		.checking-points{
-			 			padding-top:80px;
+			 			padding-top:15px;
 			 			padding-left:0;
 			 			padding-right:0;
 
 			 			.detail-headline{
 			 				text-align: left;
 			 				font-size:24px;
+			 				padding-bottom:0;
 			 			}
 			 			.detail-sub-headline{
 			 				text-align: left;
+			 				line-height:20px;
+			 				padding-bottom:22px;
 			 			}
 			 			ul{
 		                  	padding-top:0px;
@@ -371,6 +380,7 @@
 			 				display: block;
 			 				text-align:left;
 			 				border:none;
+			 				margin:3px 0px;
 			 			}
 
 			 			li:before {
@@ -389,7 +399,8 @@
 			 		.tab-pane-sub-content{
 							width:90%;
 							margin:0 auto;
-							padding-bottom:40px;
+							padding-top:15px;
+							padding-bottom:15px;
 							.garantie-text-wrapper{
 								text-align:left;
 								padding-top:20px;
@@ -414,15 +425,19 @@
 @media screen and (min-width:992px){
 	.three-packages-section{
 			 max-height:748px;
+			 .container{
+			 	top:-122px;
+			 }
 
 			ul.nav-tabs{
+				height:122px;
 		  /*	display:flex;
 		  	flex-wrap:wrap;
 		  	flex-direction: row;*/
 		  	/*align-items: stretch;*/
 				li{
 					/*flex-grow:1;*/
-					height:122px;
+					height:100%;
 					margin:0;
 						a{	
 							border-top-right-radius:4px;
@@ -467,28 +482,41 @@
 		  		padding-left:15px;
 		  		padding-right:15px;
 		  		position:relative;
-		  		top:110px;
+		  		top:0px;
 
-			      .tab-pane{
-			      	  .detail-headline{
-			      	  	margin:0;
-			      	  	padding:20px;
-			      	  }
-      	  				.price-wrapper{
-      	  					right:-40% !important;
-			 				top:-60px;
-      	  				}
-      	  				 .tab-pane-content{
-						 	margin-top:-110px;
-						 		.image-wrapper{
-						 			padding-top:95px;
-						 		}
-						 		.price-big-wrapper{
-						 			 right:-18px;
-						 			 top:254px;
-						 		}
+			     .tab-pane{
+			      	 .tab-pane-content{
+			      	 	.image-wrapper{
+			      	 		.detail-image{
+			      	 			width:105%;
+			      	 			left:-50px;
+			      	 			margin-top:-10px;
+			      	 		}
+			      	 	}
+						.checking-points{
+							.detail-headline{
+								font-size:32px;
+							}
+							.price-big-wrapper{
+								.price-wrapper{
+									right:0%;
+									top:-38px;
+									font-size:2.5em;
+									.price{
+										line-height:41px;
+									}
+								}
+							}
+							ul{
+								margin-top:15px;
+								margin-bottom:15px;
+							}
+							.btn.btn-default{
+								margin-right:100%;
+							}
 						}
-				 }
+			      	 }
+				 }/*.tab-pane*/
       	  	}/*.tab-content{*/
 
 
@@ -505,8 +533,15 @@
     }
     .three-packages-section{
 		    .container{
-				
-
+		    	ul.nav-tabs{
+		    		li{
+		    			a{
+		    				.tabs-text-wrapper{
+		    					margin-top:27px;
+		    				}
+		    			}
+		    		}
+		    	}
 				.tab-content{
 					.tab-pane{
 						.image-wrapper{
