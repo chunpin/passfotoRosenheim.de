@@ -6,6 +6,16 @@
     font-size:25px;
     padding:50px 0px;
   }
+
+
+
+  .container{
+    .row{
+      margin-right:0;
+      margin-left:0;
+    }
+  }
+
   .stars-block{
       color:$gold;
       margin-top:20px;
@@ -18,10 +28,11 @@
   
   .recommend-card{
     margin-bottom:75px;
-
+    padding-left:0px;
+    padding-right:0px;
       .card-wrapper{
-         padding-left:20px;
-         padding-right:20px;
+        /* padding-left:20px;
+         padding-right:20px;*/
            .card{
               position:relative;
               background-color:$grey-sub-super-light;
@@ -59,7 +70,13 @@
         .container > .row > h3{
           font-size:46px;
         }
-   } 
+
+
+      .recommend-card{
+        padding-left:15px;
+       padding-right:15px;
+      }
+   }/*.testmonial*/
 }
 /*END OF testmonial*/
 
