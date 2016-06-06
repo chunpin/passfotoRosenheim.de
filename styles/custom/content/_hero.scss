@@ -43,10 +43,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
    .btn-default{
    	background-color:$black;
    	color:$white;
-   	border:none;
+   	border:1px solid $black;
    	border-radius: none;
    	margin:10px 10px 20px 10px;
     font-weight:bold;
+    transition:all .3s ease-in-out;
+    &:hover{
+        background-color:$orange-light;
+        color:$black;
+    };
    }
 
    /*css shake*/
@@ -85,6 +90,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
     .logo{
       margin-top:20px;
       width:350px;
+      margin-top:20px;
+      margin-left:-15px;
     }/*.logo*/
     .hero{
           .container{

@@ -3,11 +3,24 @@
 	background-color:$orange-light;
 	padding-top:20px;
 	padding-bottom:20px;
+	.row{
+		display:flex;
+		flex-direction: row;
+		flex-wrap:wrap;
+		align-items:center;
+	}
 	.text-wrapper{
-		text-align:center;
+		display:flex;
+		flex-direction: row;
+		align-item:center;
+		justify-content:center;
 		color:$white;
 		font-weight:300;
 		margin:0;
+		h3{
+			margin-top:20px;
+			margin-bottom:20px;
+		}
 		span{
 			font-weight:bold;
 		}
@@ -17,11 +30,17 @@
 		text-align:center;
 		.button{
 			background-color:$grey-mid-tone;
+			border-top:0;
+	   		border-right:0;
+	   		border-left:0;
 			border-bottom:2px solid $grey-dark-tone;
 			box-shadow: inset 0 -2px $grey-dark-tone;
 	   		color:$white;
 	   		width:275px;
 	   		padding:15px 0px;
+	   		&:hover{
+	   			background-color:$grey-hover;
+	   		};
 		}
 	   /*	margin:10px 10px 20px 10px;*/
 	}
@@ -30,15 +49,18 @@
 
 @media screen and (min-width:768px) {
 	 .termin-vereinbaren{
-		text-align:right;
+		
 		background-color:$orange-light;
 		padding-top:20px;
 		padding-bottom:20px;
 		.text-wrapper{
-			text-align:right;
+			justify-content:flex-end;
 			padding:0;
 			color:$white;
 			font-weight:300;
+			h3{
+				text-align:right;
+			}
 			span{
 				font-weight:bold;
 			}
@@ -47,11 +69,7 @@
 		.button-wrapper{
 			text-align:left;
 			.button{
-				background-color:$black;
-		   		color:$white;
-		   		border:none;
-		   		border-radius: none;
-		   		/*padding:10px;*/
+		   		width:90%;
 			}
 		   /*	margin:10px 10px 20px 10px;*/
 		}
@@ -65,13 +83,13 @@
 
 @media screen and (min-width:992px) {
 	 .termin-vereinbaren{
-		text-align:right;
+		
 		background-color:$orange-light;
-		padding-top:20px;
-		padding-bottom:20px;
+		padding-top:40px;
+		padding-bottom:40px;
 		.text-wrapper{
-			text-align:right;
-			padding:0px 40px 0px 40px;
+			justify-content:flex-end;
+			padding:0px 15px 0px 40px;
 			color:$white;
 			font-weight:300;
 			span{
@@ -81,15 +99,11 @@
 
 		.button-wrapper{
 			text-align:left;
-			padding:0px 40px 0px 40px;
-			.button{
-				background-color:$black;
-		   		color:$white;
-		   		border:none;
-		   		border-radius: none;
-		   		/*padding:10px;*/
-			}
-		   /*	margin:10px 10px 20px 10px;*/
+			padding:0px 40px 0px 15px;
+		    .button{
+		    	font-size:20px;
+		    	font-weight:bold;
+		    }
 		}
 	}/*.termin-vereinbaren*/
 
