@@ -90,6 +90,10 @@ $(document).ready(function(){
 
 // insert testimonial autohor images array into testimonial section to entire website
       var authorImages = [
+
+          {'url':'/images/passfoto-rosenheim-biometrische-passbilder-personalausweis-visum-fotos-reisepass-quick-shot-kunden-facebook.png',
+           'alt':'passfoto-rosenheim-biometrische-passbilder-personalausweis-visum-fotos-reisepass-quick-shot-kunden-facebook.png'
+          },
           {'url':'/images/passfoto-rosenheim-biometrische-passbilder-personalausweis-visum-fotos-reisepass-quick-shot-kunden-01.png',
           'alt':'passfoto-rosenheim-biometrische-passbilder-personalausweis-visum-fotos-reisepass-quick-shot-kunden-01'
           },
@@ -116,8 +120,10 @@ $(document).ready(function(){
 
       var cardsAry = $('.testmonial .card');
       for(var i = 0 ; i < cardsAry.length; i ++){
-          $(cardsAry[i+1]).prepend('<img class ="author-image" src="' + authorImages[i].url + '"' + 'alt="'+  authorImages[i].alt + '"'+'/>');
+          $(cardsAry[i]).prepend('<img class ="author-image" src="' + authorImages[i].url + '"' + 'alt="'+  authorImages[i].alt + '"'+'/>');
       };
+
+
 
 
 

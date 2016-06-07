@@ -48,12 +48,22 @@
                     left: 50%;
                     transform: translate(-50%,-50%);
                   }
-              h5{
-                margin-top:20px;
-              }
-           }
+                  h5{
+                    margin-top:20px;
+                  }
+           }/*.card*/
+      }/*.card-wrapper*/
+  }/*.recommend-card*/
+
+  .recommend-card:first-of-type{
+      .card-wrapper{
+        .card{
+          .author-image{
+            border-color:transparent;
+          }
+        }
       }
-  }
+  }/*.recommend-card:first-of-type*/
   
  
 }/*.testmonial*/
