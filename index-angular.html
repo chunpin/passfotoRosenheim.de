@@ -280,8 +280,8 @@
     <section class="testmonial text-center" id="kundenstimmen" ng-app="app">
       <div class="container" ng-controller="testimonialCtrl">
         <div class="row">
-          <h3>Warum unsere Kunden unseren Service lieben</h3>
-          <p>Weil wir nur mit dem besten Service der Stadt zufrieden sind! Nur wenn du zufrieden bist, sind wir es auch!</p>
+          <h3>{{headline.mainText}}</h3>
+          <p>{{headline.subText}}</p>
           <div class="stars-block">
             <span class="glyphicon glyphicon-star"></span>
             <span class="glyphicon glyphicon-star"></span>
@@ -293,37 +293,35 @@
         </div>
         <div class="row">
 
-          
+  
           <div class="col-xs-12 col-sm-6 recommend-card">
             <div class="card-wrapper">
               <div class="card">
-              <img class="author-image" src="/images/passfoto-rosenheim-biometrische-passbilder-personalausweis-visum-fotos-reisepass-quick-shot-kunden-facebook.png" alt="facebook-image">
-              
-
-<div class="fb-page" data-href="https://www.facebook.com/batchfield.de"  data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/batchfield.de"><a href="https://www.facebook.com/batchfield.de">batchfield.de | photography</a></blockquote></div></div>
-
-
-
-
+                <img class="author-image" src="/images/passfoto-rosenheim-biometrische-passbilder-personalausweis-visum-fotos-reisepass-quick-shot-kunden-facebook.png" alt="facebook-image">
+               <div class="fb-page" data-href="https://www.facebook.com/PassFotoRosenheim.de"  data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                 <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/PassFotoRosenheim.de"><a href="https://www.facebook.com/PassFotoRosenheim.de">batchfield.de | photography</a></blockquote>
+                 </div>
+               </div><!-- .fb-page -->
               </div>
             </div>
-            <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
-            <p class="time">vor 2 Wochen</p>
+           <!--  <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">FROM</i></h5>
+            <p class="time">vor 2 Wochen</p> -->
           </div><!--recommend-card-->
 
 
 
 
-           <div class="col-xs-12 col-sm-6 recommend-card" ng-repeat="comment in comments | orderBy:'-date'">
+           <div class="col-xs-12 col-sm-6 recommend-card" ng-repeat="comment in comments">
             <div class="card-wrapper">
               <div class="card">
                 <img class="author-image" ng-src="{{comment.img}}" alt="comment.alt">
                 <p>{{comment.text}}</p>
-                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde persofoto weiterempfehlen</h5>
+                <h5 class="recommend-okay"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Ich würde passbildrosenheim.de weiterempfehlen</h5>
               </div>
             </div>
             <h5><span class="glyphicon glyphicon-minus"></span>&nbsp;<i class="author">{{comment.author}}</i></h5>
-            <p class="time">{{comment.date | date:'dd-MM-yyyy'}}</p>
+            <!-- <p class="time">{{comment.date | date:'dd-MM-yyyy'}}</p> -->
+            <p>vor {{comment.weeks}} wochen</p>
           </div><!--recommend-card-->
 
          
