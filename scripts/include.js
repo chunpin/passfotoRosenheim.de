@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
     //append the HTML to html page
-     var backToTopHtml = '<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="klicken Sie hier, um nach oben zu kommen" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>';
+     var backToTopHtml = '<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="zurück nach oben" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>';
      $('body').append(backToTopHtml);
 
 
