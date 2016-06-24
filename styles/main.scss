@@ -60,6 +60,8 @@
 @import "custom/custom-variable";
 @import "custom/jasny-bootstrap";
 
+	//navbar-very-top
+	@import "custom/nav/navbar-very-top";
 
 	//navbar
 	@import "custom/nav/navbar";
@@ -91,4 +93,9 @@
 // change the typefonts for the entire website
 h1,h2,h3,h4,h5,h6,p,a,li{
    font-family: 'Open Sans', sans-serif;
+}
+
+
+a:hover{
+	transition:all .3s ease-in-out;
 }

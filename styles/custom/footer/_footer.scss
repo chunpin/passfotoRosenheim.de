@@ -16,9 +16,18 @@ footer{
         margin:15px 0px;
           a{
             padding:10px 0px;
+            text-decoration: underline;
+            transition:all .3s ease-in-out;
           }
        }
+       .footer-header{
+        font-weight:bold;
+       }
+
   }
+
+
+
 
 
 
@@ -39,6 +48,10 @@ footer{
         padding:6px;
           a{
             color:$grey-sub-light;
+            transition:all .3s ease-in-out;
+          }
+          a:hover{
+            color:$white-trans;
           }
       }
   }

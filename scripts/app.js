@@ -2,8 +2,8 @@
 var app = angular.module('app', []);
 
 // Define the `testimonialCtrl` controller on the `app` module
-app.controller('testimonialCtrl', function app($scope) {
-  $scope.currentDate = Date.now();
+app.controller('testimonialCtrl',['$scope', function($scope){
+      $scope.currentDate = Date.now();
   $scope.convertToWeekNum = 604800000;
 
   $scope.headline = {
@@ -17,52 +17,20 @@ app.controller('testimonialCtrl', function app($scope) {
   }
 
   $scope.comments = [
-    { author: 'James',
-      text: 'Fast just got faster with Nexus S.',
-      img: $scope.gender.male,
+    { author: 'Bianca',
+      text: 'Hab echt tolle Passfotos bekommen! Das Team war auch super nett und professionell.',
+      img: $scope.gender.female,
       alt:'quick-shot-kunden-01',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-05-01"))) /  $scope.convertToWeekNum  )
+      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-06-14"))) /  $scope.convertToWeekNum  )
     }, 
-    { author: 'Veroll',
-      text: 'The Next, Next Generation tablet.',
-      img: $scope.gender.male,
+    { author: 'Sonja',
+      text: 'Ich habe Passbilder für meine Tochter machen lassen. Nettes Team, schneller Service, tolle Fotoqualität!',
+      img: $scope.gender.female,
       alt:'quick-shot-kunden-02',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-3-25"))) /  $scope.convertToWeekNum  )
-    }, 
-    { author: 'Maya',
-      text: 'The Next, Next Generation tablet.',
-      img: $scope.gender.female,
-      alt:'quick-shot-kunden-03',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-2-28"))) /  $scope.convertToWeekNum  )
-    }, 
-    { author: 'Basti',
-      text: 'The Next, Next Generation tablet.',
-      img: $scope.gender.male,
-      alt:'quick-shot-kunden-04',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-1-28"))) /  $scope.convertToWeekNum  )
-    }, 
-    { author: 'Dani',
-      text: 'The Next, Next Generation tablet.',
-      img: $scope.gender.female,
-      alt:'quick-shot-kunden-05',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-5-28"))) /  $scope.convertToWeekNum  )
-    }, 
-    { author: 'Paulina',
-      text: 'The Next, Next Generation tablet.',
-      img: $scope.gender.female,
-      alt:'quick-shot-kunden-06',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-6-08"))) /  $scope.convertToWeekNum  )
-    }, 
-    { author: 'Bibi',
-      text: 'The Next, Next Generation tablet.',
-      img:$scope.gender.female,
-      alt:'quick-shot-kunden-07',
-      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-3-20"))) /  $scope.convertToWeekNum  )
+      weeks: Math.round(  ($scope.currentDate -  (new Date("2016-6-16"))) /  $scope.convertToWeekNum  )
     }
-
   ];
-});
-
+}]);
 
 
 

@@ -233,22 +233,48 @@ $(document).ready(function(){
 
 
 
+ // init googleMap
+   function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: {lat: 47.8517136, lng: 12.1267768}
+      });
 
 
-// google fonts
-  WebFontConfig = {
-    google: { families: [ 'Open+Sans:400,700,600,300:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); 
+
+      // set the batchfield icon as google map pin
+      var image = 'http://passfotorosenheim.de/images/passfotorosenheim_map_pin.png';
+
+      //var beachMarker = new google.maps.Marker({
+      var marker = new google.maps.Marker({
+        position: {lat: 47.8517136, lng: 12.1267768},
+        map: map,
+        icon: image,
+        title:'Biometrische Passbilder in 5 Minuten. Garantiert!'
+      });
 
 
+      // disable the mouse scroll function
+      map.setOptions({'scrollwheel': false});
+
+
+
+      // changing the default map style
+      /*
+      var styles = [
+        {
+          "stylers": [
+            { "hue": "#006eff" },
+            { "gamma": 0.18 },
+            { "saturation": 50 }
+          ]
+        }
+      ];
+
+      map.setOptions({styles: styles});
+      */
+
+    }
 
 
 

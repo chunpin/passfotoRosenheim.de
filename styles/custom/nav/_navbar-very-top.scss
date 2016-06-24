@@ -1,0 +1,51 @@
+ section.nav_bar_very_top .container{
+      text-align: center;
+      padding:2px 0px;
+    }
+
+        section.nav_bar_very_top .container a{
+          margin-right:20px;
+          color:black;
+          font-size:12px;
+          &:hover{
+            color:white;
+          };
+        }
+
+    section.nav_bar_very_top{
+        width:100%;      
+        top:-25px;
+        z-index:9996;
+        margin:0px;
+        padding:0px;
+        height:25px;
+        background-color:rgba(255,204,5,1);
+        transition:all .3s ease-in-out;
+    }
+
+    section.nav_bar_very_top.sticky{
+      top:0px;
+      position:fixed;
+      color:white;
+      background-color:rgba(0,0,0,.5);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16);
+      transition:all .3s ease-in-out;
+    }
+
+    section.nav_bar_very_top.sticky .container a{
+      color:white;
+      &:hover{
+        color:lightgrey;
+      };
+    }
+
+
+
+
+
+
+@media screen and (min-width:650px) {
+  section.nav_bar_very_top .container{
+    text-align: right;
+  }      
+}
